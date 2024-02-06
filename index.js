@@ -28,12 +28,12 @@ function Vehicle(brand, model, year, mileage) {
 }
 
 // Рядковому представленю Vehicle призначаємо функцію яка повертає рядок: <brand> <model> <year>
-Vehicle.prototype.toString = function () {
+Vehicle.toString = function () {
   return `${this.brand} ${this.model} (${this.year})`;
 };
 // valueOf - це метод, який використовується JavaScript для конвертації об'єкта в примітивне значення.
 // Ми перевизначаємо його тут, щоб він повертав this.mileage.
-Vehicle.prototype.valueOf = function () {
+Vehicle.valueOf = function () {
   return this.mileage;
 };
 
